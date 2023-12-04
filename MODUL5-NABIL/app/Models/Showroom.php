@@ -4,14 +4,15 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Http\Controllers\ShowroomController;
 
 class Showroom extends Model
 {
     use HasFactory;
+
     protected $table = 'showroom_mobil';
 
     protected $fillable = [
-        'id', 
         'nama_mobil', 
         'brand_mobil', 
         'warna_mobil', 
